@@ -570,6 +570,10 @@ a.active {
     right: 3rem;
     font-size: 2.3rem;
   }
+
+  .registration-form .main-heading{
+    width: 80%;
+  }
 }
 
 @media (width <= 798px) {
