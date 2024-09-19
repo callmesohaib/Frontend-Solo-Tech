@@ -9,7 +9,7 @@ export const Home = () => {
           <section className="section-hero">
             <div className="container grid grid-two-cols">
               <div className="hero-content">
-                <p>We are the World Best IT Company1</p>
+                <p>We are the World Best IT Company</p>
                 <h1>Welcome to Solo-Tech</h1>
                 <p>
                   Our mission is to make technology accessible to everyone. We
