@@ -449,6 +449,7 @@ a.active {
     overflow: hidden;
   }
 
+
   .hero-image {
     width: 63%;
     display: flex;
@@ -545,15 +546,14 @@ a.active {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
-    background-color: rgba(255, 255, 255, 0.416);
-    backdrop-filter: blur(10px);
-    padding: 2rem;
+    background-color: rgb(48 46 46);;
+    padding: 2rem 0;
     border-radius: 10px;
     width: 22rem;
     text-align: center;
   }
   .navMenu li{
-    background-color: #fff;
+    background-color: var(--dark-color);
     border-bottom: 1px solid var(--dark-color);
     padding: 0.3rem 0;
     margin-bottom: 1rem;
