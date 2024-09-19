@@ -31,11 +31,16 @@ h1 {
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .desktopMenu {
   display: flex;
   gap: 3.6rem;
 }
-.bx,.navMenu{
+.bx,
+.navMenu {
   display: none;
 }
 
@@ -449,7 +454,6 @@ a.active {
     overflow: hidden;
   }
 
-
   .hero-image {
     width: 63%;
     display: flex;
@@ -546,24 +550,23 @@ a.active {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
-    background-color: rgb(48 46 46);;
+    background-color: rgb(48 46 46);
     padding: 2rem 0;
     border-radius: 10px;
     width: 22rem;
     text-align: center;
   }
-  .navMenu li{
+  .navMenu li {
     background-color: var(--dark-color);
     border-bottom: 1px solid var(--dark-color);
     padding: 0.3rem 0;
     margin-bottom: 1rem;
   }
-  
-  .navMenu li a{
-    font-size: 2rem;
 
+  .navMenu li a {
+    font-size: 2rem;
   }
-  .bx{
+  .bx {
     display: block;
     color: var(--btn-color);
     position: absolute;
@@ -571,7 +574,7 @@ a.active {
     font-size: 2.3rem;
   }
 
-  .registration-form .main-heading{
+  .registration-form .main-heading {
     width: 80%;
   }
 }
