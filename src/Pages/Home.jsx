@@ -69,7 +69,7 @@ export const Home = () => {
               <div className="hero-image last-pic">
                 <img src="/images/design.png" height="400" width="600" alt="" />
               </div>
-              <div className="hero-content">
+              <div className="hero-content last-content">
                 <p>We are here to help you</p>
                 <h1>Get started today</h1>
                 <p>

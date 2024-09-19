@@ -374,7 +374,7 @@ a.active {
   }
   .section-analytics {
     width: 100%;
-    margin: 9.6rem 0;
+    margin: 0 0;
     & .container {
       border-radius: 0.5rem;
       padding: 3rem 0;
@@ -416,6 +416,7 @@ a.active {
     position: relative;
     left: 20px;
   }
+
   .hero-image img {
     height: 400px;
     width: 400px;
@@ -424,20 +425,40 @@ a.active {
     object-fit: contain;
     height: 400px;
     width: 400px;
+    margin-top: -6rem;
+  }
+  .last-content{
+    margin-top: -8rem;
   }
 
   .hero-content {
+
     width: 80%;
   }
   .about-img img {
     width: 350px;
     height: 300px;
   }
+  .login-img,
+  .registration-img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact-img img,
   .login-img img,
   .registration-img img {
     height: 300px;
-    width: 380px;
+    width: 400px;
   }
 
   .footer {
