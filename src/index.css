@@ -31,6 +31,14 @@ h1 {
   font-weight: bold;
 }
 
+.desktopMenu {
+  display: flex;
+  gap: 3.6rem;
+}
+.bx,.navMenu{
+  display: none;
+}
+
 a {
   font-weight: 500;
   font-size: 1.8rem;
@@ -402,7 +410,7 @@ a.active {
   .grid-two-cols {
     grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
   }
-  .navbar {
+  .desktopMenu {
     display: none;
   }
   .section-analytics {
@@ -503,11 +511,11 @@ a.active {
     display: block;
     width: 100%;
   }
-  .about-content{
+  .about-content {
     width: 80%;
   }
-  .anal-about{
-    margin: 3rem 0 ; 
+  .anal-about {
+    margin: 3rem 0;
   }
   .section-services {
     & .grid-three-cols {
@@ -528,6 +536,26 @@ a.active {
 
   .card {
     padding: 1rem;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    background-color: rgba(255, 255, 255, 0.416);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .bx{
+    display: block;
+    color: var(--btn-color);
+    position: absolute;
+    right: 3rem;
+    font-size: 2.3rem;
   }
 }
 
