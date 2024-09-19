@@ -277,6 +277,43 @@ a.active {
   color: #fff;
 }
 
+
+/* --------------------------------- Service -------------------------------- */
+.card {
+  border: 2px solid #ccc;
+  padding: 2rem;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ccc;
+}
+
+.card .card-img {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.card-details .grid p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.card-details h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.card-details p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+
 @media (width <= 998px) {
   table {
     border-collapse: collapse;
@@ -427,13 +464,17 @@ a.active {
     width: 400px;
     margin-top: -6rem;
   }
-  .last-content{
+  .last-content {
     margin-top: -8rem;
   }
 
   .hero-content {
-
     width: 80%;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .about-img img {
     width: 350px;
@@ -481,6 +522,11 @@ a.active {
       }
     }
   }
+
+
+  .card{
+    padding: 1rem;
+  }
 }
 
 @media (width <= 798px) {
@@ -503,38 +549,6 @@ a.active {
       }
     }
   }
-}
-
-/* --------------------------------- Service -------------------------------- */
-.card {
-  border: 2px solid #ccc;
-  padding: 2rem;
-  transition: 0.3s ease-in-out;
-}
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #ccc;
-}
-
-.card .card-img {
-  display: flex;
-  justify-content: center;
-  height: 150px;
-}
-
-.card-details .grid p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.card-details h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.card-details p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 /* ------------------------------- Admin-users ------------------------------ */

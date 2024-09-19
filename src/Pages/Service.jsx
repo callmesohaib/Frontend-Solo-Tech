@@ -18,7 +18,7 @@ export const Service = () => {
                     <img src={`/images/${img}`} alt={service} width="200" />
                   </div>
                   <div className="card-details">
-                    <div className="grid grid-two-cols">
+                    <div className="grid grid-two-cols service-grid">
                       <p>{provider}</p>
                       <p>{price}</p>
                     </div>
