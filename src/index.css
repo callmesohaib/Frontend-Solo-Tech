@@ -277,7 +277,6 @@ a.active {
   color: #fff;
 }
 
-
 /* --------------------------------- Service -------------------------------- */
 .card {
   border: 2px solid #ccc;
@@ -310,9 +309,6 @@ a.active {
   margin-bottom: 2rem;
   text-align: center;
 }
-
-
-
 
 @media (width <= 998px) {
   table {
@@ -481,7 +477,8 @@ a.active {
     height: 300px;
   }
   .login-img,
-  .registration-img {
+  .registration-img,
+  .about-img {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -506,6 +503,12 @@ a.active {
     display: block;
     width: 100%;
   }
+  .about-content{
+    width: 80%;
+  }
+  .anal-about{
+    margin: 3rem 0 ; 
+  }
   .section-services {
     & .grid-three-cols {
       grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -523,8 +526,7 @@ a.active {
     }
   }
 
-
-  .card{
+  .card {
     padding: 1rem;
   }
 }
