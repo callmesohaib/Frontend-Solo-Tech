@@ -549,6 +549,19 @@ a.active {
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 10px;
+    width: 22rem;
+    text-align: center;
+  }
+  .navMenu li{
+    background-color: #fff;
+    border-bottom: 1px solid var(--dark-color);
+    padding: 0.3rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  .navMenu li a{
+    font-size: 2rem;
+
   }
   .bx{
     display: block;
