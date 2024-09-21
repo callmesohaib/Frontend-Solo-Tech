@@ -18,7 +18,7 @@ export const AdminLayout = () => {
   }
   return (
     <>
-      <div className="full-page">
+      <div className="full-page admin-layout">
         <header>
           <div className="container options">
             <nav>

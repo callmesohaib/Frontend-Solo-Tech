@@ -45,7 +45,7 @@ export const AdminUsers = () => {
 
   return (
     <>
-      <div className="full-page">
+      <div className="full-page admin-page">
         <section className="admin-users-section">
           <div className="container">
             <h1 className="main-heading admin-heading">Admin User Data</h1>
