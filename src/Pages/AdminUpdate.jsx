@@ -74,7 +74,7 @@ export const AdminUpdate = () => {
 
       <section className="update-container">
         <div className="container">
-          <h1 className="main-heading">Update User</h1>
+          <h1 className="main-heading admin-heading">Update User</h1>
         </div>
         <div className="container grid grid-two-cols">
           <form autoComplete="off" onSubmit={handleSubmit}>

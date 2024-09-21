@@ -42,7 +42,7 @@ export const AdminContacts = () => {
       <div className="full-page">
         <section className="admin-contacts-section">
           <div className="container">
-            <h1 className="main-heading">Admin Contact Data</h1>
+            <h1 className="main-heading admin-heading">Admin Contact Data</h1>
           </div>
           <div className="container admin-users">
             <table>

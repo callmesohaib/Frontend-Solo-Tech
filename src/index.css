@@ -471,7 +471,7 @@ td {
     border-radius: 8px;
     cursor: pointer;
     padding: 0.7rem 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 22%;
     transition: 0.3s ease-in-out;
 
@@ -686,7 +686,7 @@ td {
   .registration-form .main-heading {
     width: 80%;
   }
-  .admin-contacts-section .main-heading {
+  .admin-heading {
     font-size: 3rem;
   }
 }
@@ -734,6 +734,7 @@ td {
     justify-content: space-between;
     padding: 0.8rem;
     border-bottom: 1px solid #ddd;
+    font-size: 1.3rem;
   }
 
   td::before {
@@ -750,7 +751,7 @@ td {
   .btn-danger {
     width: 100%;
     padding: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 
   .contact-btn {
