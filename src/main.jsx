@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <App />
       <ToastContainer
         stacked
-        position="bottom-right"
+        position="top-right"
         autoClose={3000}
         limit={0}
         hideProgressBar={false}
