@@ -3,7 +3,7 @@ import { useAuth } from "../store/auth";
 
 export const AdminContacts = () => {
   const [contacts, setContacts] = useState([]);
-  const { authorizationToken ,API} = useAuth();
+  const { authorizationToken, API } = useAuth();
   const getAllContactsData = async () => {
     try {
       const response = await fetch(`${API}/api/admin/contacts`, {
@@ -57,10 +57,10 @@ export const AdminContacts = () => {
               <tbody>
                 {contacts.map((curContact, index) => (
                   <tr key={index}>
-                    <td>{curContact.name}</td>
-                    <td>{curContact.email}</td>
-                    <td>{curContact.message}</td>
-                    <td>
+                    <td data-label="Name">{curContact.name}</td>
+                    <td data-label="Email">{curContact.email}</td>
+                    <td data-label="Message">{curContact.message}</td>
+                    <td data-label="Delete">
                       <div
                         className="btn btn-danger contact-btn"
                         onClick={() => deleteContact(curContact._id)}
@@ -69,6 +69,7 @@ export const AdminContacts = () => {
                       </div>
                     </td>
                   </tr>
+                  
                 ))}
               </tbody>
             </table>

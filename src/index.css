@@ -331,6 +331,127 @@ a.active {
   text-align: center;
 }
 
+/* ------------------------------- Admin-users ------------------------------ */
+
+body tr {
+  display: gird;
+  grid-template-columns: repeat(5, minmax(10rem, 1fr));
+  align-items: center;
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  color: var(--bg-color);
+
+  &:last-child {
+    box-shadow: none;
+  }
+}
+
+.updateLink a {
+  background: #cff6dd;
+  color: green;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background: #1fa750;
+    color: #cff6dd;
+    font-weight: bold;
+  }
+}
+
+.admin-section-form {
+  background-color: var(--bg-color);
+  max-width: 60rem;
+  padding: 0 10rem;
+  color: var(--dark-color);
+  margin-left: 10rem;
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem;
+
+    & div {
+      display: grid;
+
+      & input {
+        background-color: var(--helper-color);
+        border: none;
+        padding: 1.4rem 0 1.4rem 2rem;
+        color: var(--dark-color);
+      }
+
+      & input,
+      button {
+        max-width: 30rem;
+      }
+    }
+  }
+}
+
+table {
+  background: var(--bg-color);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 7px 29px 0;
+  border-collapse: collapse;
+  border-radius: 1rem;
+}
+
+td {
+  font-size: 1.9rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  text-align: center;
+  color: var(--dark-color);
+  width: 30rem;
+}
+
+.admin-users thead th {
+  font-size: 2rem;
+  padding: 3rem;
+  color: var(--dark-color);
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.btn-danger {
+  background: #f6cfcf;
+  color: red;
+  border-radius: 8px;
+  padding: 1rem 0rem;
+  width: 11rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: red;
+    color: #f6cfcf;
+    font-weight: bold;
+  }
+}
+.contact-btn {
+  margin-left: 6.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options a {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.options .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (width <= 998px) {
   table {
     border-collapse: collapse;
@@ -338,38 +459,10 @@ a.active {
   }
 
   td {
-    font-size: 1.9rem;
-    letter-spacing: 0.1rem;
-    padding: 3rem;
-    width: 10rem;
-  }
-
-  .admin-users thead th {
-    font-size: 2rem;
-    padding: 3rem;
-    margin-bottom: 10px;
-  }
-
-  .btn-danger {
-    padding: 1rem 0rem;
-    width: 11rem;
-  }
-  .contact-btn {
-    margin-left: 6.5rem;
-  }
-
-  body tr {
-    display: gird;
-    grid-template-columns: repeat(5, minmax(10rem, 1fr));
-    align-items: center;
-    box-shadow: 0 0.3rem 0 grey;
-    margin-bottom: 10px;
-    border-bottom: 4px solid transparent;
-    color: var(--bg-color);
-
-    &:last-child {
-      box-shadow: none;
-    }
+    font-size: 1rem;
+    padding: 1rem 0.3rem;
+    border-left: 1px solid rgb(155, 154, 154);
+    border-right: 1px solid rgb(155, 154, 154);
   }
 
   .updateLink a {
@@ -377,7 +470,9 @@ a.active {
     color: green;
     border-radius: 8px;
     cursor: pointer;
-    padding: 1rem 4rem;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    width: 22%;
     transition: 0.3s ease-in-out;
 
     &:hover {
@@ -591,6 +686,9 @@ a.active {
   .registration-form .main-heading {
     width: 80%;
   }
+  .admin-contacts-section .main-heading {
+    font-size: 3rem;
+  }
 }
 
 @media (width <= 798px) {
@@ -613,125 +711,50 @@ a.active {
       }
     }
   }
-}
-
-/* ------------------------------- Admin-users ------------------------------ */
-
-body tr {
-  display: gird;
-  grid-template-columns: repeat(5, minmax(10rem, 1fr));
-  align-items: center;
-  box-shadow: 0 0.3rem 0 grey;
-  margin-bottom: 10px;
-  border-bottom: 4px solid transparent;
-  color: var(--bg-color);
-
-  &:last-child {
-    box-shadow: none;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
   }
-}
 
-.updateLink a {
-  background: #cff6dd;
-  color: green;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 1rem 4rem;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    background: #1fa750;
-    color: #cff6dd;
-    font-weight: bold;
+  thead {
+    display: none;
   }
-}
 
-.admin-section-form {
-  background-color: var(--bg-color);
-  max-width: 60rem;
-  padding: 0 10rem;
-  color: var(--dark-color);
-  margin-left: 10rem;
-  & form {
+  tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  td {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 5rem;
-
-    & div {
-      display: grid;
-
-      & input {
-        background-color: var(--helper-color);
-        border: none;
-        padding: 1.4rem 0 1.4rem 2rem;
-        color: var(--dark-color);
-      }
-
-      & input,
-      button {
-        max-width: 30rem;
-      }
-    }
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
   }
-}
 
-table {
-  background: var(--bg-color);
-  box-shadow: rgba(255, 255, 255, 0.2) 0 7px 29px 0;
-  border-collapse: collapse;
-  border-radius: 1rem;
-}
-
-td {
-  font-size: 1.9rem;
-  letter-spacing: 0.1rem;
-  padding: 3rem;
-  text-align: center;
-  color: var(--dark-color);
-  width: 30rem;
-}
-
-.admin-users thead th {
-  font-size: 2rem;
-  padding: 3rem;
-  color: var(--dark-color);
-  box-shadow: 0 0.3rem 0 grey;
-  margin-bottom: 10px;
-  text-transform: capitalize;
-}
-
-.btn-danger {
-  background: #f6cfcf;
-  color: red;
-  border-radius: 8px;
-  padding: 1rem 0rem;
-  width: 11rem;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    background: red;
-    color: #f6cfcf;
+  td::before {
+    content: attr(data-label);
     font-weight: bold;
+    flex-basis: 50%;
+    text-align: left;
   }
-}
-.contact-btn {
-  margin-left: 6.5rem;
-}
 
-.options {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.options a {
-  display: flex;
-  gap: 1rem;
-  margin-left: 2rem;
-}
-.options .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  td:last-child {
+    border-bottom: none;
+  }
+
+  .btn-danger {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-btn {
+    margin-left: 0;
+    width: 22%;
+  }
 }
