@@ -568,7 +568,7 @@ a.active {
     z-index: 1000;
   }
   .full-page {
-    min-height: 853px;
+    min-height: 100vh;
   }
   .navMenu li {
     background-color: var(--dark-color);
