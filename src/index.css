@@ -409,9 +409,6 @@ a.active {
     }
   }
 
-  .full-page {
-    min-height: 853px;
-  }
   .grid-two-cols {
     grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
   }
@@ -452,6 +449,7 @@ a.active {
   section {
     width: 100%;
     overflow: hidden;
+    z-index: 10;
   }
 
   .hero-image {
@@ -553,8 +551,15 @@ a.active {
     background-color: rgb(48 46 46);
     padding: 2rem 0;
     border-radius: 10px;
-    width: 22rem;
+    width: 23rem;
+    position: fixed;
+    right: 3rem;
     text-align: center;
+
+    z-index: 1000;
+  }
+  .full-page {
+    min-height: 853px;
   }
   .navMenu li {
     background-color: var(--dark-color);
