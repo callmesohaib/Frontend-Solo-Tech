@@ -11,20 +11,17 @@ export const AdminUpdate = () => {
   });
 
   const params = useParams();
-  const { authorizationToken,API } = useAuth();
+  const { authorizationToken, API } = useAuth();
   const navigate = useNavigate();
 
   const getSingleUserData = async () => {
     try {
-      const response = await fetch(
-        `${API}/api/admin/users/${params.id}`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: authorizationToken,
-          },
-        }
-      );
+      const response = await fetch(`${API}/api/admin/users/${params.id}`, {
+        method: "GET",
+        headers: {
+          Authorization: authorizationToken,
+        },
+      });
       const userData = await response.json();
       setData(userData);
     } catch (error) {
@@ -70,58 +67,58 @@ export const AdminUpdate = () => {
 
   return (
     <>
-        <div className="full-page">
+      <div className="full-page">
+        <section className="update-container">
+          <div className="container">
+            <h1 className="main-heading admin-heading">Update User</h1>
+          </div>
+          <div className="container grid grid-two-cols">
+            <form autoComplete="off" onSubmit={handleSubmit}>
+              <div>
+                <label htmlFor="username">Username</label>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  id="username"
+                  onChange={handleInput}
+                  value={data.username}
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  id="email"
+                  required
+                  onChange={handleInput}
+                  value={data.email}
+                />
+              </div>
+              <div>
+                <label htmlFor="phone">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone Number"
+                  id="phone"
+                  required
+                  onChange={handleInput}
+                  value={data.phone}
+                />
+              </div>
+              <br />
 
-      <section className="update-container">
-        <div className="container">
-          <h1 className="main-heading admin-heading">Update User</h1>
-        </div>
-        <div className="container grid grid-two-cols">
-          <form autoComplete="off" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="username">Username</label>
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                id="username"
-                onChange={handleInput}
-                value={data.username}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                id="email"
-                required
-                onChange={handleInput}
-                value={data.email}
-              />
-            </div>
-            <div>
-              <label htmlFor="phone">Phone Number</label>
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone Number"
-                id="phone"
-                required
-                onChange={handleInput}
-                value={data.phone}
-              />
-            </div>
-            <br />
-
-            <button type="submit" className="btn btn-submit">
-              Update Now
-            </button>
-          </form>
-        </div>
-      </section></div>
+              <button type="submit" className="btn btn-submit">
+                Update Now
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

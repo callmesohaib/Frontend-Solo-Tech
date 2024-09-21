@@ -69,7 +69,6 @@ export const AdminContacts = () => {
                       </div>
                     </td>
                   </tr>
-                  
                 ))}
               </tbody>
             </table>
