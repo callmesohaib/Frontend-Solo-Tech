@@ -1,11 +1,23 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useAuth } from "../store/auth";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Navbar = () => {
   const { user, isloggedIn } = useAuth();
   const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowMenu(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -47,14 +59,23 @@ export const Navbar = () => {
                       <NavLink to="/login"> Login</NavLink>
                     </li>
                   </>
-                )}{" "}
+                )}
               </div>
-              <li>
-                <i
-                  class="bx bx-menu-alt-right mobMenu"
-                  onClick={() => setShowMenu(!showMenu)}
-                ></i>
-              </li>
+              {!showMenu ? (
+                <li>
+                  <i
+                    className="bx bx-menu-alt-right mobMenu"
+                    onClick={() => setShowMenu(!showMenu)}
+                  ></i>
+                </li>
+              ) : (
+                <li>
+                  <i
+                    className="bx bx-x mobMenu"
+                    onClick={() => setShowMenu(!showMenu)}
+                  ></i>
+                </li>
+              )}
               <div
                 className="navMenu"
                 style={{ display: showMenu ? "flex" : "none" }}

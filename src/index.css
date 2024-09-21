@@ -555,7 +555,6 @@ a.active {
     position: fixed;
     right: 3rem;
     text-align: center;
-
     z-index: 1000;
   }
   .full-page {
