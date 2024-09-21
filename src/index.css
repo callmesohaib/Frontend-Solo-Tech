@@ -20,7 +20,17 @@ body {
 }
 .full-page {
   min-height: 77vh;
+  margin-top: 5rem;
 }
+.navbar{
+  background-color: var(--dark-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+
+}
+
 
 html {
   font-size: 62.5%;
